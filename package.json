@@ -1,0 +1,23 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "React application",
+  "homepage": "https://github.com/imbibeks826/React_app#readme",
+  "bugs": {
+    "url": "https://github.com/imbibeks826/React_app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imbibeks826/React_app.git"
+  },
+  "license": "ISC",
+  "author": "Bibekananda Sahoo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
