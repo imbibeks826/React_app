@@ -1,12 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Navbar from "./src/components/Navbar";
+import { BrowserRouter } from "react-router";
+import Router from "./src/routes/Router";
 
-const element = React.createElement('div',{key: 'header', style:{display:'flex', flex:1, height: '100vh', backgroundColor:'black', justifyContent:'center', alignItems:'center'}},React.createElement('h1',{key: 'h1', style:{color: 'white'}},'Hello, Bibek!'));
-const content = ReactDOM.createRoot(document.getElementById('root'));
+// const element = React.createElement('div',{key: 'header', style:{display:'flex', flex:1, height: '100vh', backgroundColor:'black', justifyContent:'center', alignItems:'center'}},React.createElement('h1',{key: 'h1', style:{color: 'white'}},'Hello, Bibek!'));
 // let List = React.createElement(
 //         'div', {key :'listContainer'},
 //         Array.from({length: 5}).map((_,i)=> React.createElement('li',{key:`${i}`},`Item ${i}`))
 //     )
+// const rootDiv = React.createElement('div',{key: 'parent'},[element]);
+// const element = (
+//     <div style={{ display: 'flex', margin: 0, padding: 0, flex: 1, height: '100vh', backgroundColor: 'black', justifyContent: 'center', alignItems: 'center' }}>
+//         <h1 style={{ color: 'white' }}>Hello, Bibek!</h1>
+//     </div>
+// )
 
-const rootDiv = React.createElement('div',{key: 'parent'},[element]);
-content.render(rootDiv);
+// export const ElementComponent = () => {
+//   return (
+//     <>
+//       <Navbar />
+//       <div
+//         style={{
+//           display: "flex",
+//           flex: 1,
+//           height: "100vh",
+//           backgroundColor: "black",
+//           justifyContent: "center",
+//           alignItems: "center",
+//         }}
+//       >
+//         <h1 style={{ color: "white" }}>Hello, Bibek!</h1>
+//       </div>
+//     </>
+//   );
+// };
+
+const content = ReactDOM.createRoot(document.getElementById("root"));
+content.render(
+  <BrowserRouter>
+    <Navbar />
+    <Router />
+  </BrowserRouter>
+);
+// content.render(element);
