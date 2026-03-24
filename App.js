@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Navbar from "./src/components/Navbar";
+import Navbar from "./src/components/Nvabar/Navbar";
 import { BrowserRouter } from "react-router";
 import Router from "./src/routes/Router";
 
@@ -38,9 +38,11 @@ import Router from "./src/routes/Router";
 
 const content = ReactDOM.createRoot(document.getElementById("root"));
 content.render(
+  <div style={{backgroundColor: "#F3F4F6", padding: "20px"}}>
   <BrowserRouter>
     <Navbar />
     <Router />
   </BrowserRouter>
+  </div>
 );
 // content.render(element);

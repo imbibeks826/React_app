@@ -7,12 +7,12 @@ export const HomePage = () => {
           display: "flex",
           flex: 1,
           height: "100vh",
-          backgroundColor: "black",
+          backgroundColor: "#F3F4F6",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <h1 style={{ color: "white" }}>Hello, Bibek!</h1>
+        <h1>Hello, Bibek!</h1>
       </div>
     </>
   );
