@@ -8,15 +8,13 @@ import Projects from "../components/Projects";
 
 const Router = () => {
   return (
-    // <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<About />}>
-          <Route path="/about/projects" element={<Projects />} />
-        </Route>
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    // </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<About />}>
+        <Route path="/about/projects" element={<Projects />} />
+      </Route>
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   );
 };
 

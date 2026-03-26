@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Component Snapshot test for Navbar component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-brayMQ iJOvYS"
+  >
+    <nav
+      class="sc-gJhJfT fAOwkv"
+    >
+      <div
+        class="sc-elDHXC cmbMzp"
+      >
+        <a
+          href="/"
+        >
+          B
+          <span
+            style="color: rgb(59, 130, 246);"
+          >
+            S
+          </span>
+        </a>
+      </div>
+      <ul
+        class="nav-links-container"
+      >
+        <li
+          class="sc-fQpSrZ paQli"
+        >
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="sc-fQpSrZ paQli"
+        >
+          <a
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          class="sc-fQpSrZ paQli"
+        >
+          <a
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+      <button
+        class="hamburger"
+        id="menu"
+        role="button"
+      >
+        ☰
+      </button>
+    </nav>
+  </div>
+</DocumentFragment>
+`;

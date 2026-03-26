@@ -46,6 +46,8 @@ const Navbar = () => {
             ))}
           </ul>
           <button
+            role="button"
+            id="menu"
             className="hamburger"
             onClick={() => setIsOpen((prev) => !prev)}
           >
@@ -54,7 +56,7 @@ const Navbar = () => {
         </Nav>
       </NavbarContainer>
       {isOpen && (
-        <div>
+        <div data-testid="humberger-menu">
           <HumbergerContainer onClick={() => setIsOpen(false)}>
             {NavBarLinks.map((link) => (
               <NavLink
@@ -74,6 +76,7 @@ const Navbar = () => {
       )}
       {isOpen && (
         <CloseButton
+          data-testid="close-button"
           onClick={(e) => {
             setIsOpen(false);
             e.stopPropagation();
