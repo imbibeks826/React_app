@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { ElementComponent } from "../../App";
-import About from "../screens/About";
-import Contact from "../screens/Contact";
-import HomePage from "../screens/HomePage";
+import About from "../screens/About/About";
+import Contact from "../screens/Contact/Contact";
+import HomePage from "../screens/HomePage/HomePage";
 import Projects from "../components/Projects";
 
 const Router = () => {
