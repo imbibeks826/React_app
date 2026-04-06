@@ -4,7 +4,7 @@ import About from "../screens/About/About";
 import Contact from "../screens/Contact/Contact";
 import HomePage from "../screens/HomePage/HomePage";
 import Projects from "../components/Projects";
-import InfiniteScroll from "../components/InFiniteScroll";
+import InfiniteScroll from "../components/InfiniteScroll";
 import Resume from "../screens/Resme/Resume";
 import GithubDashboard from "../screens/GithubDashboard/GithubDashboard";
 
