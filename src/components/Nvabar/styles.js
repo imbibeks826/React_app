@@ -75,11 +75,14 @@ export const HumbergerContainer = styled.div`
   position: absolute;
   top: 106px;
   left: 20px;
-  width: 70%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(100% - 40px);
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 999;
   .humberger-links {
     color: white;
     text-decoration: none;
@@ -94,8 +97,9 @@ export const HumbergerContainer = styled.div`
 export const CloseButton = styled.div`
   position: absolute;
   top: 106px;
-  left: 65%;
+  left: calc(100% - 60px);
   padding: 10px 10px 10px 10px;
   cursor: pointer;
   color: white;
+  z-index: 1000;
 `;
