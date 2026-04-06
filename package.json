@@ -15,7 +15,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "parcel index.html --no-cache",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html && cp public/_redirects dist/_redirects",
     "test": "jest"
   },
   "devDependencies": {
