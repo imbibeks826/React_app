@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GithubDashboard component check snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      target="_blank"
+    >
+      Go to github
+    </a>
+  </div>
+</DocumentFragment>
+`;

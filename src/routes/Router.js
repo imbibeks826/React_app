@@ -5,7 +5,7 @@ import Contact from "../screens/Contact/Contact";
 import HomePage from "../screens/HomePage/HomePage";
 import Projects from "../components/Projects";
 import InfiniteScroll from "../components/InfiniteScroll";
-import Resume from "../screens/Resme/Resume";
+import Resume from "../screens/Resume/Resume";
 import GithubDashboard from "../screens/GithubDashboard/GithubDashboard";
 
 const Router = () => {
