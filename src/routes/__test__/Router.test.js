@@ -7,7 +7,7 @@ jest.mock("../../../App", () => ({
   ElementComponent: () => <div>ElementComponent</div>,
 }));
 
-jest.mock("../../screens/About", () => {
+jest.mock("../../screens/About/About", () => {
   const { Outlet } = require("react-router");
   return function MockAbout() {
     return (
@@ -19,13 +19,13 @@ jest.mock("../../screens/About", () => {
   };
 });
 
-jest.mock("../../screens/Contact", () => {
+jest.mock("../../screens/Contact/Contact", () => {
   return function MockContact() {
     return <div>Contact Page</div>;
   };
 });
 
-jest.mock("../../screens/HomePage", () => {
+jest.mock("../../screens/HomePage/HomePage", () => {
   return function MockHomePage() {
     return <div>Home Page</div>;
   };

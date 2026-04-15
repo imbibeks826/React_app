@@ -38,7 +38,7 @@ exports[`Navbar Component Snapshot test for Navbar component 1`] = `
           class="sc-fQpSrZ paQli"
         >
           <a
-            href="/about"
+            href="/About"
           >
             About
           </a>
@@ -47,9 +47,18 @@ exports[`Navbar Component Snapshot test for Navbar component 1`] = `
           class="sc-fQpSrZ paQli"
         >
           <a
-            href="/contact"
+            href="/Contact"
           >
             Contact
+          </a>
+        </li>
+        <li
+          class="sc-fQpSrZ paQli"
+        >
+          <a
+            href="infinite-scroll"
+          >
+            Infinite Scroll
           </a>
         </li>
       </ul>

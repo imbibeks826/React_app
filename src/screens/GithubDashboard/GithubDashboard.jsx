@@ -17,7 +17,7 @@ function GithubDashboard() {
     console.log(isPending, error, data, isLoading);
   return (
     <div>
-      <a href={data?.html_url} >Go to github</a>
+      <a href={data?.html_url} target='_blank' >Go to github</a>
     </div>
   )
 }
