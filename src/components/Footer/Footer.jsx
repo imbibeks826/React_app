@@ -1,20 +1,23 @@
 import React from 'react'
 import { Button, ButtonGroup, CTASection } from './styles'
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 
 function Footer() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const isContactPage = location?.pathname.toLocaleLowerCase() == "/contact".toLocaleLowerCase()
+  console.log(isContactPage, location?.pathname,  "/Contact")
   return (
     <CTASection>
-    <h2>Ready to Build Something Great?</h2>
+    {!isContactPage &&<><h2>Ready to Build Something Great?</h2>
     <p>
       Let's collaborate on your next project and create something amazing
       together.
-    </p>
+    </p></>}
     <ButtonGroup style={{ justifyContent: "center" }}>
-      <Button className="primary" onClick={() => navigate("/contact")}>
+      {!isContactPage && <Button className="primary" onClick={() => navigate("/contact")}>
         Contact Me
-      </Button>
+      </Button>}
       <Button className="secondary" onClick={() => navigate("/about")}>
         Learn More
       </Button>

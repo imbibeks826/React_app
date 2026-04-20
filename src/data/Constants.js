@@ -14,11 +14,6 @@ export const NavBarLinks = [
     path: "/Contact",
     id: 3,
   },
-  {
-    label: "Infinite Scroll",
-    path: "infinite-scroll",
-    id: 4,
-  },
 ];
 
 export const skills = [
