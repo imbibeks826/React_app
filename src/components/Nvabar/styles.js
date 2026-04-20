@@ -76,7 +76,7 @@ export const HumbergerContainer = styled.div`
   top: 106px;
   left: 20px;
   width: calc(100% - 40px);
-  height: auto;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
