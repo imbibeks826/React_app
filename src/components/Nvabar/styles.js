@@ -72,8 +72,8 @@ export const NavList = styled.li`
 `;
 
 export const HumbergerContainer = styled.div`
-  position: absolute;
-  top: 106px;
+  position: fixed;
+  top: ${(props) => (props.$isScrolled ? "0px" : "106px")};
   left: 20px;
   width: calc(100% - 40px);
   height: 100vh;
@@ -96,10 +96,11 @@ export const HumbergerContainer = styled.div`
 
 export const CloseButton = styled.div`
   position: absolute;
-  top: 106px;
+  top: ${(props) => (props.$isScrolled ? "0px" : "106px")};
   left: calc(100% - 60px);
   padding: 10px 10px 10px 10px;
   cursor: pointer;
   color: white;
   z-index: 1000;
+  position: fixed;
 `;

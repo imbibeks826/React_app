@@ -34,6 +34,7 @@ export const HeroContent = styled.div`
     margin: 0 0 20px 0;
     font-weight: bold;
     line-height: 1.2;
+    word-break: break-word;
   }
 
   .title {
@@ -41,6 +42,7 @@ export const HeroContent = styled.div`
     color: #e0e7ff;
     margin-bottom: 20px;
     font-weight: 500;
+    word-break: break-word;
   }
 
   p {
@@ -48,6 +50,7 @@ export const HeroContent = styled.div`
     line-height: 1.8;
     margin-bottom: 30px;
     color: #e0e7ff;
+    word-break: break-word;
   }
 `;
 
@@ -91,7 +94,7 @@ export const Button = styled.button`
 
 export const StatsCard = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: 20px;
   margin-top: 50px;
 
@@ -139,12 +142,13 @@ export const SkillsContent = styled.div`
     margin-bottom: 50px;
     text-align: center;
     font-weight: bold;
+    word-break: break-word;
   }
 `;
 
 export const SkillsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 30px;
 `;
 
@@ -164,12 +168,14 @@ export const SkillCard = styled.div`
     color: #667eea;
     font-size: 22px;
     margin-bottom: 15px;
+    word-break: break-word;
   }
 
   p {
     color: #4b5563;
     line-height: 1.6;
     font-size: 14px;
+    word-break: break-word;
   }
 `;
 
@@ -183,6 +189,7 @@ export const ExperienceSection = styled.div`
     margin-bottom: 50px;
     text-align: center;
     font-weight: bold;
+    word-break: break-word;
   }
 `;
 
@@ -213,11 +220,13 @@ export const TimelineItem = styled.div`
     margin-left: 0;
     margin-right: 50%;
     text-align: right;
+    word-break: break-word;
 
     @media (max-width: 768px) {
       margin-right: 0;
       margin-left: 60px;
       text-align: left;
+      word-break: break-word;
     }
   }
 
@@ -225,10 +234,12 @@ export const TimelineItem = styled.div`
     margin-left: 50%;
     margin-right: 0;
     text-align: left;
+    word-break: break-word;
 
     @media (max-width: 768px) {
       margin-left: 60px;
       margin-right: 0;
+      word-break: break-word;
     }
   }
 
@@ -265,24 +276,28 @@ export const TimelineItem = styled.div`
       color: #667eea;
       font-size: 20px;
       margin-bottom: 5px;
+      word-break: break-word;
     }
 
     .company {
       color: #764ba2;
       font-weight: bold;
       margin-bottom: 10px;
+      word-break: break-word;
     }
 
     .date {
       color: #9ca3af;
       font-size: 14px;
       margin-bottom: 15px;
+      word-break: break-word;
     }
 
     p {
       color: #4b5563;
       line-height: 1.6;
       font-size: 14px;
+      word-break: break-word;
     }
   }
 `;

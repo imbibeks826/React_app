@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router";
 import {
   NavbarContainer,
@@ -12,6 +12,7 @@ import { NavBarLinks } from "../../data/Constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,6 +23,24 @@ const Navbar = () => {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY > 105) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -57,7 +76,10 @@ const Navbar = () => {
       </NavbarContainer>
       {isOpen && (
         <div data-testid="humberger-menu">
-          <HumbergerContainer onClick={() => setIsOpen(false)}>
+          <HumbergerContainer
+            onClick={() => setIsOpen(false)}
+            $isScrolled={isScrolled}
+          >
             {NavBarLinks.map((link) => (
               <NavLink
                 key={link.id}
@@ -76,6 +98,7 @@ const Navbar = () => {
       )}
       {isOpen && (
         <CloseButton
+          $isScrolled={isScrolled}
           data-testid="close-button"
           onClick={(e) => {
             setIsOpen(false);

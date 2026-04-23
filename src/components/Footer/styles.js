@@ -11,12 +11,14 @@ export const CTASection = styled.div`
     margin-bottom: 20px;
     font-weight: bold;
     color: white;
+    word-break: break-word;
   }
 
   p {
     font-size: 16px;
     margin-bottom: 30px;
     color: #e0e7ff;
+    word-break: break-word;
   }
 `;
 
