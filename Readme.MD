@@ -26,8 +26,8 @@
 <img src='./src/Assets/ReadMeImage/image_1.png' alt='Home page'>
 This is the homepage of my project.
 
-<img src='./src/Assets/ReadMeImage/image_1.png' alt='Contact'>
+<img src='./src/Assets/ReadMeImage/image_2.png' alt='Contact'>
 This is the contact section.
 
-<img src='./src/Assets/ReadMeImage/image_1.png' alt='About me'>
+<img src='./src/Assets/ReadMeImage/image_3.png' alt='About me'>
 This is the About section.
