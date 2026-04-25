@@ -6,7 +6,6 @@ function Footer() {
   const navigate = useNavigate();
   const location = useLocation();
   const isContactPage = location?.pathname.toLocaleLowerCase() == "/contact".toLocaleLowerCase()
-  console.log(isContactPage, location?.pathname,  "/Contact")
   return (
     <CTASection>
     {!isContactPage &&<><h2>Ready to Build Something Great?</h2>
