@@ -76,7 +76,9 @@ const Contact = () => {
           timestamp: new Date(),
         });
         openModal();
-      } catch (e) {}
+      } catch (e) {
+        console.log(e);
+      }
 
       // Clear the form
       setName("");
