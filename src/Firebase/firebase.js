@@ -1,5 +1,5 @@
 // firebase.js
-import { initializeApp } from "firebase/ap";
+import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
